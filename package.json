@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "license": "BSD-2-Clause",
+  "homepage": "https://bio.shuruhatik.com/",
+  "keywords": [
+    "radio",
+    "shuruhatik",
+    "شروحاتك",
+    "gif",
+    "animated",
+    "إذاعة",
+    "quran",
+    "discord",
+    "fizbo"
+  ],
+  "name": "radio-bot-by-shuruhatik",
+  "author": "shuruhatik",
+  "scripts": {
+    "Shuruhatik#2443": "node -r repl.uptime/start index.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@discordjs/voice": "^0.16.0",
+    "axios": "^1.4.0",
+    "ffmpeg-static": "^5.1.0",
+    "inquirer": "^9.2.7",
+    "nanospinner": "^1.1.0",
+    "oceanic.js": "^1.7.1",
+    "express": "^4.18.2",
+    "discord.js": "^13.14.0",
+    "opusscript": "^0.0.8",
+    "quick.replit": "^1.0.3",
+    "quickinterval": "^1.1.3",
+    "repl.uptime": "^0.0.12",
+    "st.db": "^6.0.1",
+    "tweetnacl": "^1.0.3"
+  }
+}
