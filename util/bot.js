@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.send('Hello Express app!')
 });
 
-app.listen(8050, () => {
+app.listen(7070, () => {
   console.log('server started');
 });
 
