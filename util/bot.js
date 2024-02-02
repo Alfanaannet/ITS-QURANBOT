@@ -31,7 +31,7 @@ export default async (debug = false, config, settings, is_replit = (process.env.
   const isInteger = num => /^-?[0-9]+$/.test(num + '');
   const radio_channels = new Database("/radio");
   const client = new Client({
-    auth: "Bot " + "MTIwMTM4NDI1MTAxNTI5OTIwNQ.G6v1f-.n3qnzVHEJkojKzq3fvkWjkn6fEFnCEftpR9mAc",
+    auth: "Bot " + "MTIwMzA3Njc1NzAzNzUxODg5OA.GK0_qz.RS0RITIXYgHkXo4QtGKqyn4biPQhmxUpdwd1Qk",
     rest: { requestTimeout: 60000 },
     gateway: { intents: ["GUILDS", "GUILD_VOICE_STATES"] }
   });
