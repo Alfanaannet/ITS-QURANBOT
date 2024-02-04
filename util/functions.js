@@ -71,4 +71,4 @@ async function startProject() {
   }, 100).start();
 }
 
-export { startProject, shuruhatik }
+export { startProject }
