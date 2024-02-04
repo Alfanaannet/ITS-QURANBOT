@@ -9,7 +9,6 @@ import { Intents } from 'discord.js';
 
 import { VoiceConnectionStatus, AudioPlayerStatus, createAudioPlayer, createAudioResource } from "@discordjs/voice";
 import axios from "axios";
-import { shuruhatik } from "./functions.js";
 import fs from "node:fs";
 import { createSpinner } from 'nanospinner'
 import { Interval } from 'quickinterval';
