@@ -5,7 +5,7 @@ import startBot from "./bot.js";
 import { Interval } from 'quickinterval';
 import { Database as ReplitDB } from "quick.replit";
 const is_replit = process.env.REPL_ID && process.env.REPL_SLUG && process.env.REPL_OWNER;
-const shuruhatik = `█▀ █░█ █░█ █▀█ █░█ █░█ ▄▀█ ▀█▀ █ █▄▀\n▄█ █▀█ █▄█ █▀▄ █▄█ █▀█ █▀█ ░█░ █ █░█`
+//const shuruhatik = `█▀ █░█ █░█ █▀█ █░█ █░█ ▄▀█ ▀█▀ █ █▄▀\n▄█ █▀█ █▄█ █▀▄ █▄█ █▀█ █▀█ ░█░ █ █░█`
 const settings = new Database("./config.yml");
 const config = is_replit && settings.has("token") ? settings : is_replit ? new ReplitDB() : settings;
 
@@ -62,8 +62,8 @@ function getRandomNumber(length, excludedNumbers) {
 async function startProject() {
   let timeEnd = await settings.has("reset") && await settings.has("token") ? 200 : 3000
   new Interval(async (int) => {
-    process.stdout.write('\x1Bc');
-    process.stdout.write(`\r\u001b[38;5;${getRandomNumber(230)}m${shuruhatik}\u001b[0m\n\n\u001b[1mﻲﺒﻨﻟﺍ ﻰﻠﻋ ةﻼﺻﻭ رﺎﻔﻐﺘﺳﻻﺍ ﺮﺜﻛﻭ ،ﻪﻠﻟﺍ ﺮﻛﺫ َﺲﻨﺗ ﻻ\u001b[0m`);
+   // process.stdout.write('\x1Bc');
+    //process.stdout.write(`\r\u001b[38;5;${getRandomNumber(230)}m${shuruhatik}\u001b[0m\n\n\u001b[1mﻲﺒﻨﻟﺍ ﻰﻠﻋ ةﻼﺻﻭ رﺎﻔﻐﺘﺳﻻﺍ ﺮﺜﻛﻭ ،ﻪﻠﻟﺍ ﺮﻛﺫ َﺲﻨﺗ ﻻ\u001b[0m`);
     if (int.elapsedTime >= timeEnd) {
       int.pause();
       await runAction(true);
